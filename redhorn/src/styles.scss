@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+body , html {
+    padding: 0px !important ;
+    margin: 0px !important ;
+    box-sizing: border-box ; -webkit-box-sizing : border-box ; -moz-box-sizing: border-box ;
+}
+@font-face {
+    font-family: SF-Pro-Display-Bold;
+    src: url('https://www.redhorndigital.com/wp-content/themes/salient-child/fonts/SF-Pro-Display-Bold.otf');
+}
+@font-face {
+    font-family: SF-Pro-Display-Regular;
+    src: url('https://www.redhorndigital.com/wp-content/themes/salient-child/fonts/SF-Pro-Display-Regular.otf');
+}
+// Foundations 
+$accent-color : #ff0000 ; 
+p::selection , 
+h1::selection ,
+h2::selection ,
+h3::selection ,
+h4::selection ,
+h5::selection ,
+h6::selection ,
+a::selection , 
+img::selection ,
+span::selection {
+    background-color: $accent-color !important ;
+    color: #fff !important ; 
+}
+.container-fluid { max-width: 1500px ; }
+.cpt-6 { padding-top: 6em ; }
+.cpb-6 { padding-top: 6em ; }
+.cpr-6 { padding-right: 6em !important ; }
+p { font-family: SF-Pro-Display-Regular ; }
+// Dynamic general style
+h1 , h2 { font-family: SF-Pro-Display-Bold ; }
+body .row h1 { font-size: 80px ; line-height: 90px ; }
+body .row h2 { font-size: 35px ; line-height: 45px ; }
+body .row h3 { font-size: 28px ; line-height: 35px ; }
+body .row h4 { font-size: 20px ; line-height: 25px ; }
+body .row h5 { font-size: 20px ; line-height: 25px ; }
+body .row h6 { font-size: 18px ; line-height: 25px ; }
+
+h1 , h2 , h3 , h4 { margin: 0 ; font-family: SF-Pro-Display-Bold ; }
+h5 , h6 { margin: 0 ; font-family: SF-Pro-Display-Regular ; }
+
+.navbar li a { font-family: SF-Pro-Display-Regular ; }
+a { text-decoration: none ; }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

@@ -1,0 +1,11 @@
+div.container-fluid#footer-outer { background-color: #000 ; max-width: 100% ; }
+div.row.footer { padding: 60px 0 !important ; text-align: center ; }
+div.row.footer { 
+    div.navbar , div.footerimage { text-align: center ; width: 100% ; display: block ; } 
+    div.navbar ul { margin: 0px ; padding-bottom: 110px ; } 
+    div.navbar ul li { list-style: none ; display: inline-block ; } 
+    div.navbar ul li a { display: block ; padding: 0 15px ; color: #fff ; font-size: 18px ; 
+        line-height: 36px ; } 
+    div.navbar ul li a:hover { color: #ff0000 ; }
+    div.navbar ul li a.active { color: #ff0000 ; }
+}
