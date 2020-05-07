@@ -3,7 +3,7 @@
         div.navbar > ul { width: 100% ; } 
         div.navbar ul li { list-style: none ; display: inline-block ; } 
         div.navbar ul li > a { display: block ; padding: 0 18px ; font-size: 21px ; line-height: 31px ; color: #414141 ; } 
-        div.navbar ul li > a:hover { color: #414141 ; } 
+        div.navbar ul li > a:hover { color: #414141 ; text-decoration: none ; } 
         div.navbar ul li > a.active::after { content: ''; border-radius: 50% !important;
             border: none !important; width: 8px !important; height: 8px; background-color: #ea0000 !important;
             display: block !important; margin: 0 auto; left: 47%; bottom: -6px !important; 

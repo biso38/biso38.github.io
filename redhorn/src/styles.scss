@@ -29,26 +29,82 @@ span::selection {
     background-color: $accent-color !important ;
     color: #fff !important ; 
 }
-.container-fluid { max-width: 1500px ; }
-.cpt-6 { padding-top: 6em ; }
-.cpb-6 { padding-top: 6em ; }
-.cpr-6 { padding-right: 6em !important ; }
-p { font-family: SF-Pro-Display-Regular ; }
-// Dynamic general style
-h1 , h2 { font-family: SF-Pro-Display-Bold ; }
+// Typograph all 
+p , li , ol , h5 { font-family: SF-Pro-Display-Regular ; }
+
+p , li , ol { font-size: 22px ; line-height: 36px ; }
 body .row h1 { font-size: 80px ; line-height: 90px ; }
-body .row h2 { font-size: 35px ; line-height: 45px ; }
+body .row h2 { font-size: 60px ; line-height: 70px ; }
 body .row h3 { font-size: 28px ; line-height: 35px ; }
-body .row h4 { font-size: 20px ; line-height: 25px ; }
-body .row h5 { font-size: 20px ; line-height: 25px ; }
+body .row h4 { font-size: 32px ; line-height: 40px ; }
+body .row h5 { font-size: 30px ; line-height: 40px ; text-transform: uppercase ; }
 body .row h6 { font-size: 18px ; line-height: 25px ; }
 
-h1 , h2 , h3 , h4 { margin: 0 ; font-family: SF-Pro-Display-Bold ; }
-h5 , h6 { margin: 0 ; font-family: SF-Pro-Display-Regular ; }
+h1 , h2 , h4 { margin: 0 ; font-family: SF-Pro-Display-Bold ; }
+h3 , h5 , h6 { margin: 0 ; font-family: SF-Pro-Display-Regular ; }
 
 .navbar li a { font-family: SF-Pro-Display-Regular ; }
 a { text-decoration: none ; }
 
+// Buttons colots 
+button.btn { font-family: SF-Pro-Display-Bold ; border-radius: 0; }
+button.btn-accent { background-color: $accent-color ; color: #fff ; }
+
+// List styling 
+ul > li { margin-bottom: 6px ; }
+@media screen and (min-width: 999px){
+    // Typograph big screen
+
+    // Containers lg
+    .container-fluid { max-width: 1500px ; }
+
+    // spacing lg
+    .cpt-lg-3 { padding-top: 3em ; }
+    .cpb-lg-3 { padding-bottom: 3em ; }
+    .cpr-lg-3 { padding-right: 3em !important ; }
+    .cpl-lg-3 { padding-left: 3em !important ; }
+    .cpx-lg-3 { padding-left: 3em !important ; padding-right: 3em !important ; }
+    .cpy-lg-3 { padding-top: 3em !important ; padding-bottom: 3em !important ; }
+
+    .cpt-lg-6 { padding-top: 6em ; }
+    .cpb-lg-6 { padding-bottom: 6em ; }
+    .cpr-lg-6 { padding-right: 6em !important ; }
+    .cpl-lg-6 { padding-left: 6em !important ; }
+    .cpx-lg-6 { padding-left: 6em !important ; padding-right: 6em !important ; }
+    .cpy-lg-6 { padding-top: 6em !important ; padding-bottom: 6em !important ; }
+
+    // Buttons 
+    button.btn-mx-lg { font-size: 29px ; line-height: 20px ; padding: 1.2rem 2.2rem ; }
+}
+@media screen and (max-width: 576px){
+    // Typograph small screen
+    p { font-size: 16px ; line-height: 25px ; }
+    body .row h1 { font-size: 52px ; line-height: 58px ; }
+    body .row h2 { font-size: 40px ; line-height: 48px ; }
+    body .row h3 { font-size: 28px ; line-height: 35px ; }
+    body .row h4 { font-size: 20px ; line-height: 25px ; }
+    body .row h5 { font-size: 20 ; line-height: 25px ; }
+    body .row h6 { font-size: 18px ; line-height: 25px ; }
+
+    // spacing sm
+
+    .cpt-sm-3 { padding-top: 0.5em ; }
+    .cpb-sm-3 { padding-bottom: 0.5em ; }
+    .cpr-sm-3 { padding-right: 0.5em !important ; }
+    .cpl-sm-3 { padding-left: 0.5em !important ; }
+    .cpx-sm-3 { padding-left: 1em !important ; padding-right: 1em !important ; }
+    .cpy-sm-3 { padding-top: 1em !important ; padding-bottom: 1em !important ; }
+
+    .cpt-sm-6 { padding-top: 1em ; }
+    .cpb-sm-6 { padding-bottom: 1em ; }
+    .cpr-sm-6 { padding-right: 1em !important ; }
+    .cpl-sm-6 { padding-left: 1em !important ; }
+    .cpx-sm-6 { padding-left: 2em !important ; padding-right: 2em !important ; }
+    .cpy-sm-6 { padding-top: 2em !important ; padding-bottom: 2em !important ; }
+    
+    // Buttons 
+    button.btn-mx-lg { font-size: 29px ; line-height: 20px ; padding: 1.2rem 2.2rem ; }
+}
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
