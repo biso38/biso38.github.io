@@ -104,19 +104,19 @@ ul > li { margin-bottom: 6px ; }
         background-repeat: no-repeat ; background-size: cover ; background-position: center ; }
 
     // spacing sm
-    .cpt-sm-3 { padding-top: 0.5em ; }
-    .cpb-sm-3 { padding-bottom: 0.5em ; }
-    .cpr-sm-3 { padding-right: 0.5em !important ; }
-    .cpl-sm-3 { padding-left: 0.5em !important ; }
-    .cpx-sm-3 { padding-left: 1em !important ; padding-right: 1em !important ; }
-    .cpy-sm-3 { padding-top: 1em !important ; padding-bottom: 1em !important ; }
+    .cpt-sm-3 { padding-top: 1em ; }
+    .cpb-sm-3 { padding-bottom: 1em ; }
+    .cpr-sm-3 { padding-right: 1em !important ; }
+    .cpl-sm-3 { padding-left: 1em !important ; }
+    .cpx-sm-3 { padding-left: 1.5em !important ; padding-right: 1.5em !important ; }
+    .cpy-sm-3 { padding-top: 1.5em !important ; padding-bottom: 1.5em !important ; }
 
-    .cpt-sm-6 { padding-top: 1em ; }
-    .cpb-sm-6 { padding-bottom: 1em ; }
-    .cpr-sm-6 { padding-right: 1em !important ; }
-    .cpl-sm-6 { padding-left: 1em !important ; }
-    .cpx-sm-6 { padding-left: 2em !important ; padding-right: 2em !important ; }
-    .cpy-sm-6 { padding-top: 2em !important ; padding-bottom: 2em !important ; }
+    .cpt-sm-6 { padding-top: 2em ; }
+    .cpb-sm-6 { padding-bottom: 2em ; }
+    .cpr-sm-6 { padding-right: 2em !important ; }
+    .cpl-sm-6 { padding-left: 2em !important ; }
+    .cpx-sm-6 { padding-left: 2.5em !important ; padding-right: 2.5em !important ; }
+    .cpy-sm-6 { padding-top: 2.5em !important ; padding-bottom: 2.5em !important ; }
     
     // Buttons 
     button.btn-mx-lg { font-size: 29px ; line-height: 29px ; padding: 1.2rem 2.2rem ; }
