@@ -16,6 +16,9 @@ body , html {
 }
 // Foundations 
 $accent-color : #ff0000 ; 
+$lignt : #fff ; 
+$dark: #000 ;
+
 p::selection , 
 h1::selection ,
 h2::selection ,
@@ -35,16 +38,21 @@ p , li , ol , h5 { font-family: SF-Pro-Display-Regular ; }
 p , li , ol { font-size: 22px ; line-height: 36px ; }
 body .row h1 { font-size: 80px ; line-height: 90px ; }
 body .row h2 { font-size: 60px ; line-height: 70px ; }
-body .row h3 { font-size: 28px ; line-height: 35px ; }
-body .row h4 { font-size: 32px ; line-height: 40px ; }
+body .row h3 { font-size: 40px ; line-height: 50px ; }
+body .row h4 { font-size: 22px ; line-height: 36px ; }
 body .row h5 { font-size: 30px ; line-height: 40px ; text-transform: uppercase ; }
 body .row h6 { font-size: 18px ; line-height: 25px ; }
 
-h1 , h2 , h4 { margin: 0 ; font-family: SF-Pro-Display-Bold ; }
-h3 , h5 , h6 { margin: 0 ; font-family: SF-Pro-Display-Regular ; }
+h1 , h2 , h3 , h4 { margin: 0 ; font-family: SF-Pro-Display-Bold ; }
+h5 , h6 { margin: 0 ; font-family: SF-Pro-Display-Regular ; }
 
 .navbar li a { font-family: SF-Pro-Display-Regular ; }
 a { text-decoration: none ; }
+
+// golobal Colors
+.dark { color: $dark !important ; } 
+.light { color: $lignt !important ; } 
+.accent { color: $accent-color !important ; } 
 
 // Buttons colots 
 button.btn { font-family: SF-Pro-Display-Bold ; border-radius: 0; }
@@ -57,6 +65,10 @@ ul > li { margin-bottom: 6px ; }
 
     // Containers lg
     .container-fluid { max-width: 1500px ; }
+
+    // Backgrounds 
+    div.row .bg-img { width: 100% ; position: absolute ; top: 0 ; left: 0; z-index: 0; height: 100% ; display: block ; 
+        background-repeat: no-repeat ; background-size: cover ; background-position: center ; }
 
     // spacing lg
     .cpt-lg-3 { padding-top: 3em ; }
@@ -74,7 +86,7 @@ ul > li { margin-bottom: 6px ; }
     .cpy-lg-6 { padding-top: 6em !important ; padding-bottom: 6em !important ; }
 
     // Buttons 
-    button.btn-mx-lg { font-size: 29px ; line-height: 20px ; padding: 1.2rem 2.2rem ; }
+    button.btn-mx-lg { font-size: 29px ; line-height: 29px ; padding: 1.2rem 2.2rem ; }
 }
 @media screen and (max-width: 576px){
     // Typograph small screen
@@ -86,8 +98,12 @@ ul > li { margin-bottom: 6px ; }
     body .row h5 { font-size: 20 ; line-height: 25px ; }
     body .row h6 { font-size: 18px ; line-height: 25px ; }
 
-    // spacing sm
+    
+    // Backgrounds 
+    div.row .bg-img { width: 100% ; position: absolute ; top: 0 ; left: 0; z-index: 0; height: 100% ; display: block ; 
+        background-repeat: no-repeat ; background-size: cover ; background-position: center ; }
 
+    // spacing sm
     .cpt-sm-3 { padding-top: 0.5em ; }
     .cpb-sm-3 { padding-bottom: 0.5em ; }
     .cpr-sm-3 { padding-right: 0.5em !important ; }
@@ -103,7 +119,7 @@ ul > li { margin-bottom: 6px ; }
     .cpy-sm-6 { padding-top: 2em !important ; padding-bottom: 2em !important ; }
     
     // Buttons 
-    button.btn-mx-lg { font-size: 29px ; line-height: 20px ; padding: 1.2rem 2.2rem ; }
+    button.btn-mx-lg { font-size: 29px ; line-height: 29px ; padding: 1.2rem 2.2rem ; }
 }
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
