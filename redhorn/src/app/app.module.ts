@@ -25,10 +25,7 @@ import { HeaderSecondComponentComponent } from './header-second-component/header
     CapabilitiesComponent,
     WorkComponent,
     ContactUsComponent,
-works-page
     WorksCardComponent,
-   HeaderTestComponentComponent,
-   HeaderSecondComponentComponent
   ],
   imports: [
     BrowserModule,
