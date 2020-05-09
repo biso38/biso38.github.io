@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router'; 
 
 @Injectable({
   providedIn: 'root'
 })
 export class CommonService {
 
-  constructor() { }
+  constructor( private router: Router) { }
 
   page_options(options : any){
     let BG = options.HeaderBG ;
@@ -35,5 +36,11 @@ export class CommonService {
       document.getElementById("header").style.backgroundColor = '' ;
       document.getElementById("header").classList.remove("normal");
     }
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+          return;
+      }
+      window.scrollTo(0, 0)
+    });
   }
 }

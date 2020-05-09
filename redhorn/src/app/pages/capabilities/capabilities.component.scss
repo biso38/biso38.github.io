@@ -1,9 +1,17 @@
 @media screen and (min-width: 999px){
     div.container-fluid#capabilites_row { padding-top: 200px ; }
+    div.capabilites_first_row { padding-bottom: 190px ; }
 }
 @media screen and (max-width: 999px) and (min-width: 620px) {
     div.container-fluid#capabilites_row { padding-top: 150px ; }
+    div.capabilites_first_row { padding-bottom: 120px ; }
 }
 @media screen and (max-width: 620px) {
     div.container-fluid#capabilites_row { padding-top: 100px ; }
+    div.capabilites_first_row { padding-bottom: 80px ; }
 }
+// all screens style
+p.line_after_text:after { content: ''; border-left: solid 1px #fff; height: 114px; display: block; text-align: center;
+     width: 1% ; margin: 0 auto ; margin-top: 35px ; }
+ul li { list-style: none ; }
+ul li:before { content: url('https://www.redhorndigital.com/wp-content/uploads/2020/03/combined-shape.svg'); margin-right: 11px; margin-top: -1px ; }

@@ -17,8 +17,10 @@ export class CapabilitiesComponent implements OnInit {
   }
   
   scroll = (event): void => {
-    if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
+    if(document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700){
       document.body.style.backgroundColor = "#fff";
+    }else {
+      document.body.style.backgroundColor = "#202938";
     }
   };
 
@@ -26,7 +28,6 @@ export class CapabilitiesComponent implements OnInit {
     document.body.style.backgroundColor = "#202938";
     this.CS.page_options(this.options);
     window.addEventListener('scroll', this.scroll, true); //third parameter
-
   }
   ngOnDestroy() {
     document.body.style.backgroundColor = "";
