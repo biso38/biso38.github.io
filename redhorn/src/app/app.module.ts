@@ -24,7 +24,6 @@ import { HeaderTestComponentComponent } from './header-test-component/header-tes
     CapabilitiesComponent,
     WorkComponent,
     ContactUsComponent,
-works-page
     WorksCardComponent,
    HeaderTestComponentComponent
   ],
