@@ -12,7 +12,6 @@ export class HeaderComponent implements OnInit {
   scroll = (event): void => {
     if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
       document.getElementById("header").classList.add("sticky");
-      console.log('scroll bottom');
     }else {
       document.getElementById("header").classList.remove("sticky");
     }

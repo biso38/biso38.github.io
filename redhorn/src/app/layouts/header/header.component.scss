@@ -1,13 +1,50 @@
+div#header.sticky { position: fixed; top: 0; width: 100%; background-color: #fff; z-index: 10; }
 @media screen and (min-width: 999px){
-    .header { 
+    div#header { 
         div.navbar > ul { width: 100% ; } 
         div.navbar ul li { list-style: none ; display: inline-block ; } 
-        div.navbar ul li > a { display: block ; padding: 0 18px ; font-size: 21px ; line-height: 31px ; color: #414141 ; } 
         div.navbar ul li > a:hover { color: #414141 ; text-decoration: none ; } 
-        div.navbar ul li > a.active::after { content: ''; border-radius: 50% !important;
-            border: none !important; width: 8px !important; height: 8px; background-color: #ea0000 !important;
+        div.navbar ul li > a { display: block ; padding: 0 18px ; font-size: 21px ; line-height: 31px ;} 
+        div.navbar ul li:not(.navbar-btn ) > a.active::after { content: ''; border-radius: 50% !important;
+            border: none !important; width: 8px !important; height: 8px; 
             display: block !important; margin: 0 auto; left: 47%; bottom: -6px !important; 
         } 
-        li.navbar-btn { border: solid 2px #ff0000 ; color: #ff0000 ; border-radius: 5px ; padding: 6px 0px ; margin-left: 20px ; }
+        li.navbar-btn { border: solid 2px ; border-radius: 5px ; padding: 6px 0px ; margin-left: 20px ; }
     }
+    // default if not dark or not light
+    div#header:not(.dark):not(.light) { 
+        div.navbar ul li > a { color: #414141 ; } 
+        li.navbar-btn {  color: #ff0000 ; border-color: #ff0000 ; }
+        div.navbar ul li > a.active::after { background-color: #ff0000; }
+    }
+    div#header.dark , div#header.light.sticky { 
+        div.navbar ul li > a { color: #414141 ; } 
+        li.navbar-btn {  color: #ff0000 ; border-color: #ff0000 ; }
+        div.navbar ul li > a.active::after { background-color: #ff0000; }
+    }
+    div#header.light:not(.sticky) { 
+        div.navbar ul li > a { color: #fff ; } 
+        li.navbar-btn {  color: #fff ; border-color: #fff; }
+        div.navbar ul li > a.active::after { background-color: #fff; }
+    }
+    div#header.transparent:not(.sticky) {
+        position: absolute ; top: 0px ; left: 0px ; width: 100% ;
+    }
+}
+@media screen and (max-width: 999px) {
+    .navbar.lg { display: none ; }
+    #header { padding-bottom: 20px ; }
+}
+// default if not dark or not light
+div#header:not(.dark):not(.light) { 
+    img.dark_logo { display: block ; }
+    img.light_logo { display: none ; }
+}
+div#header.dark , div#header.light.sticky { 
+    img.dark_logo { display: block ; }
+    img.light_logo { display: none ; }
+}
+div#header.light:not(.sticky) { 
+    img.dark_logo { display: none ; }
+    img.light_logo { display: block ; }
 }
