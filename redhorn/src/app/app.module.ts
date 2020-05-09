@@ -13,6 +13,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { WorksCardComponent } from './pages/work/works-card/works-card.component';
 import { HeaderTestComponentComponent } from './header-test-component/header-test-component.component';
+import { HeaderSecondComponentComponent } from './header-second-component/header-second-component.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { HeaderTestComponentComponent } from './header-test-component/header-tes
     WorkComponent,
     ContactUsComponent,
     WorksCardComponent,
-   HeaderTestComponentComponent
+   HeaderTestComponentComponent,
+   HeaderSecondComponentComponent
   ],
   imports: [
     BrowserModule,
