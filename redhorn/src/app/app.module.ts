@@ -12,9 +12,6 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { WorksCardComponent } from './pages/work/works-card/works-card.component';
-import { HeaderTestComponentComponent } from './header-test-component/header-test-component.component';
-import { HeaderSecondComponentComponent } from './header-second-component/header-second-component.component';
-
 
 @NgModule({
   declarations: [
