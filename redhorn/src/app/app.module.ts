@@ -10,7 +10,10 @@ import { CapabilitiesComponent } from './pages/capabilities/capabilities.compone
 import { WorkComponent } from './pages/work/work.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { WorksCardComponent } from './pages/work/works-card/works-card.component';
 import { HeaderTestComponentComponent } from './header-test-component/header-test-component.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { HeaderTestComponentComponent } from './header-test-component/header-tes
     CapabilitiesComponent,
     WorkComponent,
     ContactUsComponent,
-    HeaderTestComponentComponent
+works-page
+    WorksCardComponent,
+   HeaderTestComponentComponent
   ],
   imports: [
     BrowserModule,
