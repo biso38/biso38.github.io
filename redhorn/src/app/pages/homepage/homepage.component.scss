@@ -9,6 +9,7 @@ a:hover { text-decoration: none ; }
     .three-cols-second-row .col-lg-4:nth-child(3) .opt-col { background-color: #ff0000 ; color: #fff ; padding: 50px 0 80px 0 ;}
     // div.row #huvr {  }
     p.custom_row_details { font-size: 18px ; line-height: 40px ; }
+    .three_columns_row { padding-left : 6% ; padding-right: 6% ; }
 }
 @media screen and (max-width: 999px){   
     .three-cols-second-row .col-lg-4:nth-child(1) .opt-col img { max-width: 100% ; mix-blend-mode: screen ; }
@@ -18,6 +19,3 @@ ul li:before { content: url('https://www.redhorndigital.com/wp-content/uploads/2
 h4.white_arrow_after_heading:after { content: url(https://www.redhorndigital.com/wp-content/uploads/2020/03/white-arrow.svg); margin-left: 20px ; position: relative ; top: 2px; }
 h4.gray_arrow_after_heading:after { content: url(https://www.redhorndigital.com/wp-content/uploads/2020/03/gray-arrow.svg); margin-left: 20px; position: relative; top: 2px; }
 h4.red_arrow_after_heading:after { content: url(https://www.redhorndigital.com/wp-content/uploads/2020/03/red-arrow.svg); margin-left: 10px; position: relative; top: 2px; }
-span.borderBottom { border-top: solid 1px #fff ; border-top: solid 1px #fff ; display: block; }
-div.borderedBottomCol h3:nth-child(1) span.borderBottom { width: 44% ; margin-left: 8%; }
-div.borderedBottomCol h3:nth-child(2) span.borderBottom { width: 92% ; margin-right: 0; margin-left: auto ;}

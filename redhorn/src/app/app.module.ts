@@ -12,6 +12,7 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { WorksCardComponent } from './pages/work/works-card/works-card.component';
+import { RedBottomRowComponent } from './layouts/red-bottom-row/red-bottom-row.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { WorksCardComponent } from './pages/work/works-card/works-card.component
     WorkComponent,
     ContactUsComponent,
     WorksCardComponent,
+    RedBottomRowComponent,
   ],
   imports: [
     BrowserModule,
