@@ -1,0 +1,9 @@
+@media screen and (min-width: 999px){
+    div.container-fluid#capabilites_row { padding-top: 200px ; }
+}
+@media screen and (max-width: 999px) and (min-width: 620px) {
+    div.container-fluid#capabilites_row { padding-top: 150px ; }
+}
+@media screen and (max-width: 620px) {
+    div.container-fluid#capabilites_row { padding-top: 100px ; }
+}
