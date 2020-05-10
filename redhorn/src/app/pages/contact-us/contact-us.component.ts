@@ -40,7 +40,7 @@ export class ContactUsComponent implements OnInit {
     this.CS.page_options(this.options);
     this.ContactUs = this.FB.group({
       name : ['', Validators.required],
-      email : ['', Validators.required],
+      email : ['', [Validators.required, Validators.email]],
       message : ['', Validators.required],
     });
   }
