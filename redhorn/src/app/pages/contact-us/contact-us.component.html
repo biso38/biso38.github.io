@@ -26,6 +26,7 @@
                         <mat-label>Your Email</mat-label>
                         <input matInput formControlName="email" placeholder="Ex. pat@example.com">
                         <mat-error *ngIf="ContactUs.controls.email.errors?.required">Please enter your email</mat-error>
+                        <mat-error *ngIf="ContactUs.controls.email.errors?.email">Please enter valid email</mat-error>
                     </mat-form-field>
                     <mat-form-field class="full-width-input mt-4">
                         <mat-label>Your message</mat-label>
