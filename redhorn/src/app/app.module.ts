@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MyMaterialModule } from './material.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +16,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { WorksCardComponent } from './pages/work/works-card/works-card.component';
 import { RedBottomRowComponent } from './layouts/red-bottom-row/red-bottom-row.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { RedBottomRowComponent } from './layouts/red-bottom-row/red-bottom-row.c
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    MyMaterialModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

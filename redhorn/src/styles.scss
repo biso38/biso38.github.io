@@ -1,3 +1,31 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$redhorn-primary: mat-palette($mat-indigo);
+$redhorn-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$redhorn-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$redhorn-theme: mat-light-theme($redhorn-primary, $redhorn-accent, $redhorn-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($redhorn-theme);
+
 // basem was here ..
 // Mohamed Was here also ;)
 /* You can add global styles to this file, and also import other style files */
@@ -65,14 +93,13 @@ ul > li { margin-bottom: 6px ; }
 body { transition: background 0.3s ease ; }
 
 @media screen and (min-width: 999px){
-    // Typograph big screen
-
     // Containers lg
     .container-fluid { max-width: 1500px ; }
 
     // Backgrounds 
     div.row .bg-img { width: 100% ; position: absolute ; top: 0 ; left: 0; z-index: 0; height: 100% ; display: block ; 
         background-repeat: no-repeat ; background-size: cover ; background-position: center ; }
+    div.row .bg-color { width: 100% ; position: absolute ; top: 0 ; left: 0; z-index: 0; height: 100% ; display: block ; }
 
     // spacing lg
     .cpt-lg-3 { padding-top: 3em ; }
@@ -91,7 +118,47 @@ body { transition: background 0.3s ease ; }
 
     // Buttons 
     button.btn-mx-lg { font-size: 29px ; line-height: 29px ; padding: 1.2rem 2.2rem ; }
+
+    // contact form 
+    .contact_form_column .full-width-input .mat-form-field-infix{ font-size: 28px !important ; }
+
 }
+// medium screen
+@media screen and (max-width: 999px) and (min-width: 576px){
+    // Typograph small screen
+    p { font-size: 16px ; line-height: 25px ; }
+    body .row h1 { font-size: 52px ; line-height: 58px ; }
+    body .row h2 { font-size: 40px ; line-height: 48px ; }
+    body .row h3 { font-size: 28px ; line-height: 35px ; }
+    body .row h4 { font-size: 20px ; line-height: 25px ; }
+    body .row h5 { font-size: 20 ; line-height: 25px ; }
+    body .row h6 { font-size: 18px ; line-height: 25px ; }
+
+    
+    // Backgrounds 
+    div.row .bg-img { width: 100% ; position: absolute ; top: 0 ; left: 0; z-index: 0; height: 100% ; display: block ; 
+        background-repeat: no-repeat ; background-size: cover ; background-position: center ; }
+    div.row .bg-color { width: 100% ; position: absolute ; top: 0 ; left: 0; z-index: 0; height: 100% ; display: block ; }
+
+    // spacing sm
+    .cpt-sm-3 { padding-top: 2em ; }
+    .cpb-sm-3 { padding-bottom: 2em ; }
+    .cpr-sm-3 { padding-right: 2em !important ; }
+    .cpl-sm-3 { padding-left: 2em !important ; }
+    .cpx-sm-3 { padding-left: 2.5em !important ; padding-right: 2.5em !important ; }
+    .cpy-sm-3 { padding-top: 2.5em !important ; padding-bottom: 2.5em !important ; }
+
+    .cpt-sm-6 { padding-top: 3em ; }
+    .cpb-sm-6 { padding-bottom: 3em ; }
+    .cpr-sm-6 { padding-right: 3em !important ; }
+    .cpl-sm-6 { padding-left: 3em !important ; }
+    .cpx-sm-6 { padding-left: 3.5em !important ; padding-right: 3.5em !important ; }
+    .cpy-sm-6 { padding-top: 3.5em !important ; padding-bottom: 3.5em !important ; }
+    
+    // Buttons 
+    button.btn-mx-lg { font-size: 29px ; line-height: 29px ; padding: 1.2rem 2.2rem ; }
+}
+// small screen
 @media screen and (max-width: 576px){
     // Typograph small screen
     p { font-size: 16px ; line-height: 25px ; }
@@ -106,6 +173,7 @@ body { transition: background 0.3s ease ; }
     // Backgrounds 
     div.row .bg-img { width: 100% ; position: absolute ; top: 0 ; left: 0; z-index: 0; height: 100% ; display: block ; 
         background-repeat: no-repeat ; background-size: cover ; background-position: center ; }
+    div.row .bg-color { width: 100% ; position: absolute ; top: 0 ; left: 0; z-index: 0; height: 100% ; display: block ; }
 
     // spacing sm
     .cpt-sm-3 { padding-top: 1em ; }
