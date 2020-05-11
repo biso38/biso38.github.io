@@ -1,1 +1,52 @@
-<p>contact-us works!</p>
+<div class="first_contact_page"  style="background-color: #F6F7F9;">
+    <div class="container-fluid">
+        <div class="row pb-5">
+            <div class="col-lg-6 pb-lg-3">
+                <h1 class="pb-4">Hello, We’ve been expecting you.</h1>
+                <h6 class="custom_heading">— Interested in working with us? We’d love to hear from you.</h6>
+            </div>
+            <div class="col-lg-6"></div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row pt-lg-5 mt-3">
+        <div class="col-lg-6 col-md-12 col-sm-12 contact_form_column">
+            <h3 class="pb-3" style="color: #252525;">Contact</h3>
+                <div *ngIf="submitted && success" class="alert alert-success mr-2" role="alert">
+                    Your message has been sent we will get in touch with you as soon as possible 
+                </div>
+                <form [formGroup]="ContactUs" [ngClass]="{ 'success' : success }">
+                    <mat-form-field class="full-width-input">
+                        <mat-label>Your name</mat-label>
+                        <input matInput formControlName="name">
+                        <mat-error *ngIf="ContactUs.controls.name.errors?.required">Please enter your name</mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="full-width-input mt-4">
+                        <mat-label>Your Email</mat-label>
+                        <input matInput formControlName="email" placeholder="Ex. pat@example.com">
+                        <mat-error *ngIf="ContactUs.controls.email.errors?.required">Please enter your email</mat-error>
+                        <mat-error *ngIf="ContactUs.controls.email.errors?.email">Please enter valid email</mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="full-width-input mt-4">
+                        <mat-label>Your message</mat-label>
+                        <input matInput formControlName="message">
+                        <mat-error *ngIf="ContactUs.controls.message.errors?.required">Please enter your message</mat-error>
+                    </mat-form-field>
+                    <button type="button" (click)="submit(ContactUs.value)" class="btn btn-accent btn-lg py-2 px-4 mt-5" style="font-size: 29px ;" [disabled]="ContactUs.invalid">
+                        Send Message</button>
+                </form>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 pr-5 pt-lg-0 pt-4">
+            <h3 style="color: #252525;">Email</h3>
+            <p class="custom_p pt-3 pb-lg-5 mb-3">contact@redhorn.com</p>
+            <h3 class="pb-2" style="color: #252525;">Book a Call</h3>
+            <p class="custom_p mt-1 mb-5 pb-lg-3">Book a no-nonsense call, we'll tell you exactly what we would do if we were you.</p>
+            <a target="_blank" href="https://meetings.hubspot.com/redhorn/20-min-consultation">    
+                <button type="button" class="btn btn-accent btn-lg py-2 px-4 submit" style="font-size: 29px ;">Click Right Here</button>
+            </a>
+            <h3 style="color: #252525;" class="pt-5 pb-2">HQ</h3>
+            <p class="custom_p mt-1 mb-5 pb-lg-3">Austin, TX</p>
+        </div>
+    </div>
+</div>

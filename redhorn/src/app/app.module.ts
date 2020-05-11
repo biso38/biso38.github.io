@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MyMaterialModule } from './material.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,9 +15,8 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { WorksCardComponent } from './pages/work/works-card/works-card.component';
-import { HeaderTestComponentComponent } from './header-test-component/header-test-component.component';
-import { HeaderSecondComponentComponent } from './header-second-component/header-second-component.component';
-
+import { RedBottomRowComponent } from './layouts/red-bottom-row/red-bottom-row.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,16 @@ import { HeaderSecondComponentComponent } from './header-second-component/header
     WorkComponent,
     ContactUsComponent,
     WorksCardComponent,
-   HeaderTestComponentComponent,
-   HeaderSecondComponentComponent
+    RedBottomRowComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    MyMaterialModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
