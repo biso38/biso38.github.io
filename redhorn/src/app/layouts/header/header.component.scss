@@ -22,13 +22,11 @@ div#header.sticky { position: fixed; top: 0; width: 100%; background-color: #fff
         li.navbar-btn {  color: #ff0000 ; border-color: #ff0000 ; }
         div.navbar ul li > a.active::after { background-color: #ff0000; }
     }
+    div#header.sticky { background-color: #fff !important ; }
     div#header.light:not(.sticky) { 
         div.navbar ul li > a { color: #fff ; } 
         li.navbar-btn {  color: #fff ; border-color: #fff; }
         div.navbar ul li > a.active::after { background-color: #fff; }
-    }
-    div#header.transparent:not(.sticky) {
-        position: absolute ; top: 0px ; left: 0px ; width: 100% ;
     }
 }
 @media screen and (max-width: 999px) {

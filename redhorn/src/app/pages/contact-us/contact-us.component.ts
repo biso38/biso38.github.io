@@ -17,7 +17,7 @@ export class ContactUsComponent implements OnInit {
   success = false ;
 
   options = {
-    HeaderBG : '',
+    HeaderBG : '#F6F7F9',
     HColor: 'dark',
     HStyle: 'transparent'
   }
