@@ -9,6 +9,7 @@ import { CommonService } from '../../common/common.service';
 export class CapabilitiesComponent implements OnInit {
 
   constructor(private CS : CommonService) { }
+  observer : any ; 
 
   options = {
     HeaderBG : '#202938',
@@ -17,11 +18,26 @@ export class CapabilitiesComponent implements OnInit {
   }
   
   scroll = (event): void => {
-    if(document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700){
-      document.body.style.backgroundColor = "#fff";
-    }else {
-      document.body.style.backgroundColor = "#202938";
-    }
+    const mark = document.querySelector('.light_start');
+
+    this.observer = new IntersectionObserver((entries) => {
+        console.log(entries);
+        if(entries[0].intersectionRatio > 0){
+              if(document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700){
+                document.body.style.backgroundColor = "#fff";
+              }else {
+                document.body.style.backgroundColor = "#202938";
+              }
+        }else {
+              if(document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700){
+                document.body.style.backgroundColor = "#fff";
+              }else {
+                document.body.style.backgroundColor = "#202938";
+              }
+        }
+    });
+
+    this.observer.observe(mark);
   };
 
   ngOnInit(): void {

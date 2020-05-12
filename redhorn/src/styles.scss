@@ -93,7 +93,8 @@ ul > li { margin-bottom: 6px ; }
 body { transition: background 0.3s ease ; }
 
 // animations 
-body { overflow-x: hidden ; }
+html , body { overflow-x: hidden ; }
+body { position: relative ; }
 .fromleftfadeanimation:not(.done_animate){ transform: translateX(-100%) ; opacity: 0 ; }
 .fromrightfadeanimation:not(.done_animate){ transform: translateX(100%) ; opacity: 0 ; }
 .frombottomfadeanimation:not(.done_animate){ transform: translateY(100px) ; opacity: 0 ; }
@@ -117,7 +118,8 @@ body { overflow-x: hidden ; }
 
 @media screen and (min-width: 999px){
     // Containers lg
-    .container-fluid { max-width: 1500px ; }
+    body .container-fluid { max-width: 1500px ; padding: 0 50px ; }
+    body .container { max-width: 1400px ; padding: 0 65px ;}
 
     // Backgrounds 
     div.row .bg-img { width: 100% ; position: absolute ; top: 0 ; left: 0; z-index: 0; height: 100% ; display: block ; 
@@ -184,15 +186,15 @@ body { overflow-x: hidden ; }
 // small screen
 @media screen and (max-width: 576px){
     // Typograph small screen
-    p { font-size: 16px ; line-height: 25px ; }
+    p , li , ol { font-size: 16px ; line-height: 25px ; }
+
     body .row h1 { font-size: 52px ; line-height: 58px ; }
     body .row h2 { font-size: 40px ; line-height: 48px ; }
     body .row h3 { font-size: 28px ; line-height: 35px ; }
     body .row h4 { font-size: 20px ; line-height: 25px ; }
-    body .row h5 { font-size: 20 ; line-height: 25px ; }
+    body .row h5 { font-size: 20px ; line-height: 25px ; }
     body .row h6 { font-size: 18px ; line-height: 25px ; }
 
-    
     // Backgrounds 
     div.row .bg-img { width: 100% ; position: absolute ; top: 0 ; left: 0; z-index: 0; height: 100% ; display: block ; 
         background-repeat: no-repeat ; background-size: cover ; background-position: center ; }
@@ -214,7 +216,7 @@ body { overflow-x: hidden ; }
     .cpy-sm-6 { padding-top: 2.5em !important ; padding-bottom: 2.5em !important ; }
     
     // Buttons 
-    button.btn-mx-lg { font-size: 29px ; line-height: 29px ; padding: 1.2rem 2.2rem ; }
+    button.btn-mx-lg { font-size: 25px ; line-height: 25px ; padding: 1.2rem 2.2rem ; }
 }
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
