@@ -1,13 +1,13 @@
 @media screen and (min-width: 999px){
-    div.container-fluid#capabilites_row { padding-top: 200px ; }
+    div.container-fluid#capabilites_row { padding-top: 160px ; }
     div.capabilites_first_row { padding-bottom: 190px ; }
 }
 @media screen and (max-width: 999px) and (min-width: 620px) {
-    div.container-fluid#capabilites_row { padding-top: 150px ; }
+    div.container-fluid#capabilites_row { padding-top: 120px ; }
     div.capabilites_first_row { padding-bottom: 120px ; }
 }
 @media screen and (max-width: 620px) {
-    div.container-fluid#capabilites_row { padding-top: 100px ; }
+    div.container-fluid#capabilites_row { padding-top: 90px ; }
     div.capabilites_first_row { padding-bottom: 80px ; }
 }
 // all screens style

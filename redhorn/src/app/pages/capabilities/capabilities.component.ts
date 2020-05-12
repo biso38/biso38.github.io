@@ -11,7 +11,7 @@ export class CapabilitiesComponent implements OnInit {
   constructor(private CS : CommonService) { }
 
   options = {
-    HeaderBG : '#fff',
+    HeaderBG : '#202938',
     HColor: 'light',
     HStyle: 'transparent'
   }

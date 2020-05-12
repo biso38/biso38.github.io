@@ -92,6 +92,29 @@ ul > li { margin-bottom: 6px ; }
 // Body animation 
 body { transition: background 0.3s ease ; }
 
+// animations 
+body { overflow-x: hidden ; }
+.fromleftfadeanimation:not(.done_animate){ transform: translateX(-100%) ; opacity: 0 ; }
+.fromrightfadeanimation:not(.done_animate){ transform: translateX(100%) ; opacity: 0 ; }
+.frombottomfadeanimation:not(.done_animate){ transform: translateY(100px) ; opacity: 0 ; }
+.fromtopfadeanimation:not(.done_animate){ transform: translateY(-100px) ; opacity: 0 ; }
+@keyframes animateFromLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to  { transform: translateX(0%); opacity: 1 ; }
+}
+@keyframes animateFromRight {
+    from { transform: translateX(100%) ; opacity: 0 ; }
+    to  { transform: translateX(0%) ; opacity: 1 ; }
+}
+@keyframes animateFromBottom {
+    from { transform: translateY(100px) ; opacity: 0 ; }
+    to  { transform: translateY(0%) ; opacity: 1 ; }
+}
+@keyframes animateFromTop {
+    from { transform: translateY(-100px) ; opacity: 0 ; }
+    to  { transform: translateY(0%) ; opacity: 1 ; }
+}
+
 @media screen and (min-width: 999px){
     // Containers lg
     .container-fluid { max-width: 1500px ; }

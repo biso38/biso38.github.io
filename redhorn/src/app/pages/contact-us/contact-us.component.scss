@@ -1,15 +1,15 @@
 @media screen and (min-width: 999px) {
-    .first_contact_page { padding-top: 230px ; }
+    .first_contact_page { padding-top: 130px ; }
     h6.custom_heading { font-size: 40px ; line-height: 55px ; }
     p.custom_p { font-size: 28px ; line-height: 35px ; }
 }
 @media screen and (max-width: 999px) and (min-width: 620px) {
-    .first_contact_page { padding-top: 130px; }
+    .first_contact_page { padding-top: 100px; }
     h6.custom_heading { font-size: 30px ; line-height: 40px ; }
     p.custom_p { font-size: 22px ; line-height: 28px ; }
 }
 @media screen and (max-width: 620px) {
-    .first_contact_page { padding-top: 100px; }
+    .first_contact_page { padding-top: 90px; }
     h6.custom_heading { font-size: 20px ; line-height: 30px ; }
     p.custom_p { font-size: 19px ; line-height: 25px ; }
 }
