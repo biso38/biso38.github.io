@@ -7,7 +7,7 @@ import { Router, NavigationEnd } from '@angular/router';
 export class CommonService {
 
   constructor( private router: Router) { }
-
+  observer : any ; 
   page_options(options : any){
     let BG = options.HeaderBG ;
     let StickyBG = options.StickyBG ;
@@ -38,18 +38,13 @@ export class CommonService {
       if (!(evt instanceof NavigationEnd)) {
           return;
       }
-      window.scroll({
-        top: 0, 
-        left: 0, 
-        behavior: 'smooth'
-      });
+      scroll(0,0);
     });
     this.animation_function_left();
     this.animation_function_right();
     this.animation_function_FromBottom();
     this.animation_function_FromTop();
   }
-  observer : any ; 
   animation_function_left(){
     const images = document.querySelectorAll('.fromleftfadeanimation');
     this.observer = new IntersectionObserver((entries) => {

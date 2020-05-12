@@ -1,4 +1,4 @@
-div#header.sticky { position: fixed; top: 0; width: 100%; background-color: #fff; z-index: 10; }
+div#header.sticky { position: fixed; top: 0; width: 100%; background-color: #fff !important ; z-index: 10; }
 @media screen and (min-width: 999px){
     div#header { 
         div.navbar > ul { width: 100% ; } 
