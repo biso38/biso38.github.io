@@ -10,8 +10,8 @@ export class WorkComponent implements OnInit {
 
   constructor(private CS: CommonService) { }
   options = {
-    HeaderBG : '#fff',
-    HColor: 'dark',
+    HeaderBG : '#ea0000',
+    HColor: 'light',
     HStyle: 'normal'
   }
 
