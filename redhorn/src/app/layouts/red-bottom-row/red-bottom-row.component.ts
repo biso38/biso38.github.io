@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-red-bottom-row',
@@ -7,11 +7,8 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 })
 export class RedBottomRowComponent implements OnInit {
 
-  constructor(private renderer: Renderer2) { }
+  constructor() { }
 
-  public animate({ target, visible }: { target: Element; visible: boolean }): void {
-    this.renderer.addClass(target, visible ? 'done_animate' : 'inactive');
-  }
   ngOnInit(): void {
   }
 

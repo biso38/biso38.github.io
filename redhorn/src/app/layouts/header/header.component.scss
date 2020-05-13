@@ -31,7 +31,7 @@ div#header.sticky { position: fixed; top: 0; width: 100%; background-color: #fff
 }
 @media screen and (max-width: 999px) {
     .navbar.lg { display: none ; }
-    #header { padding-bottom: 20px ; margin-bottom: -1px ; }
+    #header { padding-bottom: 20px ; }
 }
 // default if not dark or not light
 div#header:not(.dark):not(.light) { 
