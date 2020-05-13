@@ -7,7 +7,15 @@ import { Router, NavigationEnd } from '@angular/router';
 export class CommonService {
 
   constructor( private router: Router) { }
+
   observer : any ; 
+
+  config = {
+    root: null, 		// sets the framing element to the viewport
+    rootMargin: '0px',
+    threshold: 0.5
+  };
+
   page_options(options : any){
     let BG = options.HeaderBG ;
     let StickyBG = options.StickyBG ;
@@ -40,16 +48,16 @@ export class CommonService {
       }
       scroll(0,0);
     });
-    this.animation_function_left();
-    this.animation_function_right();
-    this.animation_function_FromBottom();
-    this.animation_function_FromTop();
+    // this.animation_function_left();
+    // this.animation_function_right();
+    // this.animation_function_FromBottom();
+    // this.animation_function_FromTop();
   }
   animation_function_left(){
     const images = document.querySelectorAll('.fromleftfadeanimation');
     this.observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            // console.log(entry);
+            console.log(entry);
             if(entry.intersectionRatio > 0) {
                 if(!entry.target.classList.contains('done_animate')){
                     entry.target.classList.add('done_animate');
@@ -60,7 +68,7 @@ export class CommonService {
             //   (<HTMLElement>entry.target).style.animation = 'none';
             // }
         });
-    });
+    }, );
     images.forEach(image => {
         this.observer.observe(image);
     });
@@ -77,7 +85,7 @@ export class CommonService {
                 }
             }
         });
-    });
+    }, );
     images.forEach(image => {
         this.observer.observe(image);
     });
@@ -94,7 +102,7 @@ export class CommonService {
                 }
             }
         });
-    });
+    }, );
     images.forEach(image => {
         this.observer.observe(image);
     });
@@ -111,7 +119,7 @@ export class CommonService {
                 }
             }
         });
-    });
+    }, );
     images.forEach(image => {
         this.observer.observe(image);
     });
