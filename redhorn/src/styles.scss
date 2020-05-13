@@ -99,6 +99,12 @@ body { position: relative ; }
 .fromrightfadeanimation:not(.done_animate){ transform: translateX(100%) ; opacity: 0 ; }
 .frombottomfadeanimation:not(.done_animate){ transform: translateY(100px) ; opacity: 0 ; }
 .fromtopfadeanimation:not(.done_animate){ transform: translateY(-100px) ; opacity: 0 ; }
+
+.fromleftfadeanimation.done_animate { animation: animateFromLeft 1s ease-out; }
+.fromrightfadeanimation.done_animate { animation: animateFromRight 1s ease-out; }
+.frombottomfadeanimation.done_animate { animation: animateFromBottom 1s ease-out; }
+.fromtopfadeanimation.done_animate { animation: animateFromTop 1s ease-out; }
+
 @keyframes animateFromLeft {
     from { transform: translateX(-100%); opacity: 0; }
     to  { transform: translateX(0%); opacity: 1 ; }
