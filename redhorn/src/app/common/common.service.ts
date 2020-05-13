@@ -49,7 +49,7 @@ export class CommonService {
     const images = document.querySelectorAll('.fromleftfadeanimation');
     this.observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            // console.log(entry);
+            console.log(entry);
             if(entry.intersectionRatio > 0) {
                 if(!entry.target.classList.contains('done_animate')){
                     entry.target.classList.add('done_animate');
