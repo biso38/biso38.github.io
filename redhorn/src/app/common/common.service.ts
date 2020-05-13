@@ -48,10 +48,10 @@ export class CommonService {
       }
       scroll(0,0);
     });
-    this.animation_function_left();
-    this.animation_function_right();
-    this.animation_function_FromBottom();
-    this.animation_function_FromTop();
+    // this.animation_function_left();
+    // this.animation_function_right();
+    // this.animation_function_FromBottom();
+    // this.animation_function_FromTop();
   }
   animation_function_left(){
     const images = document.querySelectorAll('.fromleftfadeanimation');
