@@ -62,8 +62,6 @@ export class CommonService {
         });
     });
     images.forEach(image => {
-        this.observer.POLL_INTERVAL = 100 ; 
-        this.observer.USE_MUTATION_OBSERVER = false ;  
         this.observer.observe(image);
     });
   }
@@ -81,8 +79,6 @@ export class CommonService {
         });
     });
     images.forEach(image => {
-        this.observer.POLL_INTERVAL = 100 ; 
-        this.observer.USE_MUTATION_OBSERVER = false ;  
         this.observer.observe(image);
     });
   }
@@ -100,8 +96,6 @@ export class CommonService {
         });
     });
     images.forEach(image => {
-        this.observer.POLL_INTERVAL = 100 ; 
-        this.observer.USE_MUTATION_OBSERVER = false ; 
         this.observer.observe(image);
     });
   }
@@ -119,8 +113,6 @@ export class CommonService {
         });
     });
     images.forEach(image => {
-        this.observer.POLL_INTERVAL = 100 ; 
-        this.observer.USE_MUTATION_OBSERVER = false ; 
         this.observer.observe(image);
     });
   }
