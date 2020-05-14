@@ -13,10 +13,10 @@ import { CapabilitiesComponent } from './pages/capabilities/capabilities.compone
 import { WorkComponent } from './pages/work/work.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 import { WorksCardComponent } from './pages/work/works-card/works-card.component';
 import { RedBottomRowComponent } from './layouts/red-bottom-row/red-bottom-row.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AnimateModule } from './animate/animate.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactUsComponent,
     WorksCardComponent,
     RedBottomRowComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MyMaterialModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AnimateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
