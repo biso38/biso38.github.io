@@ -7,8 +7,8 @@ import{WorksCard} from '../works-card.model'
 })
 export class WorksCardComponent implements OnInit {
   WorksCard: WorksCard[] = [
-    new WorksCard('Huvr', 'The whole shebang helping put millions of dollars into their sales pipeline', 'https://www.redhorndigital.com/wp-content/uploads/2020/03/huvr-thumbnail.png'),
-    new WorksCard('Primo Chalk', 'Website redesign to help paid media conversions.', 'https://www.redhorndigital.com/wp-content/uploads/2020/03/huvr-thumbnail.png')
+    new WorksCard('Huvr', 'The whole shebang helping put millions of dollars into their sales pipeline', 'assets/images/huvr-thumbnail.png'),
+    new WorksCard('Primo Chalk', 'Website redesign to help paid media conversions.', 'assets/images/huvr-thumbnail.png')
   ];
   constructor() { }
 
