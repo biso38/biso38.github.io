@@ -4,6 +4,7 @@ import { MyMaterialModule } from './material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'; 
 import { InViewportModule } from 'ng-in-viewport';
+import { AnimateModule } from './animate/animate.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -39,7 +40,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    InViewportModule
+    InViewportModule,
+    AnimateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
