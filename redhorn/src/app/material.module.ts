@@ -6,6 +6,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCardModule} from '@angular/material/card';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { NgModule } from  '@angular/core';
 
@@ -18,7 +19,8 @@ imports: [
     MatIconModule,
     MatAutocompleteModule,
     MatSelectModule,
-    MatCardModule
+    MatCardModule,
+    MatSidenavModule
 ],
 exports: [
     MatFormFieldModule, 
@@ -28,7 +30,8 @@ exports: [
     MatIconModule,
     MatAutocompleteModule,
     MatSelectModule,
-    MatCardModule
+    MatCardModule,
+    MatSidenavModule
 ],
 
 })
