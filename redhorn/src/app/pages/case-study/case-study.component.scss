@@ -1,0 +1,15 @@
+@media screen and (min-width: 999px){
+    div#first_section { padding-top: 100px ; }
+    div#first_section { padding-bottom: 120px ; }
+}
+@media screen and (max-width: 999px) and (min-width: 680px){
+    div#first_section { padding-top: 80px ; }
+    div#first_section { padding-bottom: 60px ; }
+}
+@media screen and (max-width: 480px){
+    div#first_section { padding-top: 60px ; }
+    div#first_section { padding-bottom: 40px ; }
+}
+div.first p:before { content: url('/assets/images/Case-Study1.svg'); position: relative; left: -18px; top: 7px; }
+div.second p:before { content: url('/assets/images/Case-Study2.svg'); position: relative; left: -18px ; top: 7px; }
+div.third p:before { content: url('/assets/images/Case-Study3.svg'); position: relative; left: -18px; top: 7px; }

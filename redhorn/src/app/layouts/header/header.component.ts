@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   hidden = true ; 
   visable = false ; 
@@ -37,6 +38,13 @@ export class HeaderComponent implements OnInit {
   };
   ngOnInit(): void {
     window.addEventListener('scroll', this.scroll, true); //third parameter
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+          return;
+      }
+      this.hidden = true ; 
+      this.visable = false ; 
+    });
   }
   ngOnDestroy() {
     window.removeEventListener('scroll', this.scroll, true);
