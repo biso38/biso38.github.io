@@ -9,6 +9,25 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  hidden = true ; 
+  visable = false ; 
+  Menu(){
+      if(this.hidden == true){
+        this.hidden = false ; 
+        this.visable = true ;
+      }else {
+        this.hidden = true ; 
+        this.visable = false ; 
+      }
+  }
+  onClickedOutside(e: Event) {
+    if(this.hidden == false && this.visable == true && e.target != document.getElementById("menu_button")){
+      if(e.target != document.getElementById("menu_button_icon")){
+        this.hidden = true ; 
+        this.visable = false ; 
+      }
+    }
+  }
   scroll = (event): void => {
     if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
       document.getElementById("header").classList.add("sticky");
