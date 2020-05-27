@@ -3,12 +3,9 @@ import { NgModule } from '@angular/core';
 import { MyMaterialModule } from './material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'; 
-<<<<<<< HEAD
-=======
 import { InViewportModule } from 'ng-in-viewport';
 import { AnimateModule } from './animate/animate.module';
 import { ClickOutsideModule } from 'ng-click-outside';
->>>>>>> 1e124f79dbe13aa5e459ae51c832ce03860ab2ac
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,12 +19,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WorksCardComponent } from './pages/work/works-card/works-card.component';
 import { RedBottomRowComponent } from './layouts/red-bottom-row/red-bottom-row.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-<<<<<<< HEAD
-import { AnimateModule } from './animate/animate.module';
-=======
 import { CaseStudyComponent } from './pages/case-study/case-study.component';
 import { ContentfulService } from './common/contentful.service';
->>>>>>> 1e124f79dbe13aa5e459ae51c832ce03860ab2ac
 
 @NgModule({
   declarations: [
@@ -40,12 +33,7 @@ import { ContentfulService } from './common/contentful.service';
     ContactUsComponent,
     WorksCardComponent,
     RedBottomRowComponent,
-<<<<<<< HEAD
-    
-    
-=======
     CaseStudyComponent,
->>>>>>> 1e124f79dbe13aa5e459ae51c832ce03860ab2ac
   ],
   imports: [
     BrowserModule,
@@ -55,13 +43,9 @@ import { ContentfulService } from './common/contentful.service';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     HttpClientModule,
-<<<<<<< HEAD
-    AnimateModule
-=======
     InViewportModule,
     AnimateModule,
     ClickOutsideModule
->>>>>>> 1e124f79dbe13aa5e459ae51c832ce03860ab2ac
   ],
   providers: [ContentfulService],
   bootstrap: [AppComponent]

@@ -15,10 +15,6 @@ export class HomepageComponent implements OnInit {
     HColor: 'dark',
     HStyle: 'normal'
   }
-<<<<<<< HEAD
-=======
-  
->>>>>>> 1e124f79dbe13aa5e459ae51c832ce03860ab2ac
   ngOnInit(): void {
     this.CS.page_options(this.options);
   }
