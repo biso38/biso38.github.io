@@ -24,6 +24,7 @@
     "@angular/router": "~9.0.5",
     "@ng-bootstrap/ng-bootstrap": "^6.1.0",
     "bootstrap": "^4.4.0",
+    "contentful": "^7.14.4",
     "intersection-observer": "^0.10.0",
     "ng-click-outside": "^6.0.0",
     "ng-in-viewport": "^6.1.0",
