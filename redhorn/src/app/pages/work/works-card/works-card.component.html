@@ -1,14 +1,14 @@
 <div class="container">
     <div class="row">
-        <div class="col work-card"  *ngFor="let card of WorksCard">
+        <div class="col work-card"  *ngFor="let project of projects">
             <div class="work-card-img">
-                <img class="img-fluid" src="{{card.imagePath}}">
+                <img class="img-fluid" src="{{project.fields.projectThumbnail.fields.file.url}}">
             </div>
             <div class="work-card-title">
-                <p>{{card.title}} —</p>
+                <p>{{project.fields.projectName }} —</p>
             </div>
             <div class="work-card-content">
-                <p>{{card.content}}</p>
+                <p>{{project.fields.projectBrief }}</p>
             </div>
             <div class="work-card-link">
                 <h4 style="font-size: 22px;color: #252525;line-height: 25px;text-align: left" class="vc_custom_heading gray_arrow_after_heading">
@@ -16,6 +16,6 @@
                 </h4>
             </div>
         </div>
-        
+      
     </div>
 </div>

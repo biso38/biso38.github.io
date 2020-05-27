@@ -21,6 +21,7 @@ import { WorksCardComponent } from './pages/work/works-card/works-card.component
 import { RedBottomRowComponent } from './layouts/red-bottom-row/red-bottom-row.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CaseStudyComponent } from './pages/case-study/case-study.component';
+import { ContentfulService } from './common/contentful.service';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,7 @@ import { CaseStudyComponent } from './pages/case-study/case-study.component';
     AnimateModule,
     ClickOutsideModule
   ],
-  providers: [],
+  providers: [ContentfulService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
