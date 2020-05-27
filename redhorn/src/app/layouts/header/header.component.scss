@@ -1,5 +1,6 @@
 div#header.sticky { position: fixed; top: 0; width: 100%; background-color: #fff !important ; z-index: 10; }
-@media screen and (min-width: 999px){
+@media screen and (min-width: 1260px){
+    .navbar_sm , button.menu_button { display: none ; }
     div#header { 
         div.navbar > ul { width: 100% ; } 
         div.navbar ul li { list-style: none ; display: inline-block ; } 
@@ -28,21 +29,35 @@ div#header.sticky { position: fixed; top: 0; width: 100%; background-color: #fff
         li.navbar-btn {  color: #fff ; border-color: #fff; }
         div.navbar ul li > a.active::after { background-color: #fff; }
     }
-}
-@media screen and (max-width: 999px) {
+}   
+@media screen and (max-width: 1260px) {
     .navbar.lg { display: none ; }
+<<<<<<< HEAD
     #header { padding-bottom: 20px ; }
+=======
+    .navbar.sm { display: block ; }
+    #header { padding-bottom: 20px ; margin-bottom: -1px ; }
+>>>>>>> 1e124f79dbe13aa5e459ae51c832ce03860ab2ac
 }
 // default if not dark or not light
-div#header:not(.dark):not(.light) { 
-    img.dark_logo { display: block ; }
-    img.light_logo { display: none ; }
-}
-div#header.dark , div#header.light.sticky { 
-    img.dark_logo { display: block ; }
-    img.light_logo { display: none ; }
-}
-div#header.light:not(.sticky) { 
-    img.dark_logo { display: none ; }
-    img.light_logo { display: block ; }
+div#header:not(.dark):not(.light) {  img.dark_logo { display: block ; } img.light_logo { display: none ; } }
+div#header.dark , div#header.light.sticky {  img.dark_logo { display: block ; } img.light_logo { display: none ; } }
+div#header.light:not(.sticky) {  img.dark_logo { display: none ; } img.light_logo { display: block ; } }
+@media screen and (max-width: 1260px) {
+    button.menu_button { display: block ; margin-left: auto; margin-right: 20px ; }
+    .navbar_sm { position: fixed; left: 0; top: 0; z-index: 100; width: 80%; height: 100vh !important; display: block; background: #ff0000; 
+        max-width: 350px ; padding-top: 4em ; transition: all 0.5s ease-in-out ; }
+    .navbar_sm.hidden { transform: translateX(-100%); } 
+    .navbar_sm.visable { transform: translateX(0%); } 
+    div.sm_navbar_container ul li { list-style: none ; margin-top: 10px ; }
+    div.sm_navbar_container ul li a { color: #fff ; font-size: 19px ; }
+    div.close { width: 100% ; text-align: right ; color: #fff ; opacity: 1 ; position: relative ; top: -1em ; padding-right: 20px ; }
+    div.close button { color: #fff ; opacity: 1 ; }
+    div#header.dark , div#header.light.sticky { 
+        button.menu_button { color: #ff0000 !important ; }
+    }
+    div#header.light:not(.sticky) { 
+        button.menu_button { color: #fff !important ; }
+    }
+    div#header:not(.dark):not(.light) { color: #ff0000 ; }
 }

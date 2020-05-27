@@ -40,6 +40,7 @@ export class CommonService {
       }
       scroll(0,0);
     });
+<<<<<<< HEAD
     this.animation_function_left();
     this.animation_function_right();
     this.animation_function_FromBottom();
@@ -115,5 +116,8 @@ export class CommonService {
     images.forEach(image => {
         this.observer.observe(image);
     });
+=======
+>>>>>>> 1e124f79dbe13aa5e459ae51c832ce03860ab2ac
   }
+
 }

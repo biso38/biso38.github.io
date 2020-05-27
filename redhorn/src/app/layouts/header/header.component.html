@@ -1,11 +1,14 @@
 <div id="header">
     <div class="container">
         <div class="row pt-4">
-            <div class="col-lg-6 pt-lg-2 pl-lg-0">
-                <img class="dark_logo" src="https://www.redhorndigital.com/wp-content/uploads/2020/03/logo.svg">
-                <img class="light_logo" src="https://redhornstaging.wpengine.com/wp-content/uploads/2020/03/logo-white.svg">
+            <div class="col-8 col-lg-6 col-sm-8 pt-lg-2 pl-lg-0">
+                <img class="dark_logo" src="assets/images/logo.svg">
+                <img class="light_logo" src="assets/images/logo-white.svg">
             </div>
-            <div class="col-lg-6">
+            <div class="col-4 col-lg-6 col-sm-4">
+                    <button id="menu_button" class="menu_button" mat-icon-button color="accent" aria-label="Menu icon" (click)="Menu()">
+                        <mat-icon id="menu_button_icon">menu</mat-icon>
+                    </button>
                 <div class="navbar lg text-right">
                     <ul>
                         <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
@@ -15,6 +18,26 @@
                             <a routerLink="contact-us" routerLinkActive="active">Contact Us</a>
                         </li>
                     </ul>
+                </div>
+                <div class="navbar_sm" (clickOutside)="onClickedOutside($event)" [ngClass]="{ 'hidden': hidden , 'visable' : visable }">
+                    <div class="close">
+                        <button mat-icon-button color="accent" aria-label="Close Menu icon" (click)="Menu()">
+                            <span class="material-icons">close</span>
+                        </button>
+                    </div>
+                    <div class="sm_navbar_container">
+                        <ul>
+                            <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+                            <li><a routerLink="capabilities" routerLinkActive="active">Capabilities</a></li>
+                            <li><a routerLink="work" routerLinkActive="active">Work</a></li>
+                            <li class="navbar-btn">
+                                <a routerLink="contact-us" routerLinkActive="active">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="text-center pt-5">
+                            <img class="img-fluid" src="assets/images/logo-white.svg">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
